@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --dark-blue-2: hsl(215, 24%, 14%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --font-size: 15px;
+    --font-family: "Overpass";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    color: var(--light-grey);
+    font-size: var(--font-size);
+    font-weight: 400;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    background-color: var(--dark-blue-2);
+    width: 20em;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 0.5em;
+    transition: all 0.3s ease;
+}
+
+summary {
+    background-color: var(--dark-blue);
+    border-radius: 1em;
+    color: var(--orange);
+    padding: 0.2em 1em;
+}
+
+.thank-you {
+    align-items: center;
+    display: none;
+}
+
+.star-icon {
+    background-color: var(--dark-blue);
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+menu {
+    list-style-type: none;
+    font-weight: 700;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+}
+
+.rating-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rating-option {
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    padding: 0.6em 1em;
+    transition: all 0.3s ease;
+}
+
+.rating-option:hover {
+    background-color: var(--orange);
+    color: var(--very-dark-blue);
+    transition: all 0.3s ease;
+}
+
+.selected {
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+    transition: all 0.3s ease;
+}
+
+.submit {
+    background-color: var(--orange);
+    color: var(--very-dark-blue);
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    transition: background-color 0.3s ease;
+}
+
+.msg {
+    text-align: center;
+}

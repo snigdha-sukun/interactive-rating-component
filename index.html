@@ -7,53 +7,50 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
 
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- Rating state start -->
+  <main>
 
-  How did we do?
+    <!-- Rating state start -->
+    <article class="rating-container" id="rating-container">
+      <img src="./images/icon-star.svg" alt="Star Icon" width="30" class="star-icon">
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <menu class="rating-options" id="rating-options-container">
+        <li class="rating-option" data-value="1" aria-label="Rating 1">1</li>
+        <li class="rating-option" data-value="2" aria-label="Rating 2">2</li>
+        <li class="rating-option" data-value="3" aria-label="Rating 3">3</li>
+        <li class="rating-option" data-value="4" aria-label="Rating 4">4</li>
+        <li class="rating-option" data-value="5" aria-label="Rating 5">5</li>
+      </menu>
+      <button aria-label="Submit" class="submit" id="submit-btn">
+        SUBMIT
+      </button>
+    </article>
+    <!-- Rating state end -->
 
-  Please let us know how we did with your support request. All feedback is appreciated
-  to help us improve our offering!
+    <!-- Thank you state start -->
+    <article class="thank-you" id="thank-you-container">
+      <img src="./images/illustration-thank-you.svg" alt="Thank You Illustration" width="100">
+      <summary>You selected <span id="rating-text"></span><!-- Add rating here --> out of 5</summary>
+      <h1>Thank you!</h1>
+      <p class="msg">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </article>
+    <!-- Thank you state end -->
 
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </main>
 </body>
 
 </html>
