@@ -26,11 +26,11 @@
         to help us improve our offering!
       </p>
       <menu class="rating-options" id="rating-options-container">
-        <li class="rating-option" data-value="1" aria-label="Rating 1">1</li>
-        <li class="rating-option" data-value="2" aria-label="Rating 2">2</li>
-        <li class="rating-option" data-value="3" aria-label="Rating 3">3</li>
-        <li class="rating-option" data-value="4" aria-label="Rating 4">4</li>
-        <li class="rating-option" data-value="5" aria-label="Rating 5">5</li>
+        <li class="rating-option" data-value="1" aria-valuetext="Rating 1">1</li>
+        <li class="rating-option" data-value="2" aria-valuetext="Rating 2">2</li>
+        <li class="rating-option" data-value="3" aria-valuetext="Rating 3">3</li>
+        <li class="rating-option" data-value="4" aria-valuetext="Rating 4">4</li>
+        <li class="rating-option" data-value="5" aria-valuetext="Rating 5">5</li>
       </menu>
       <button aria-label="Submit" class="submit" id="submit-btn">
         SUBMIT
@@ -41,7 +41,9 @@
     <!-- Thank you state start -->
     <article class="thank-you" id="thank-you-container">
       <img src="./images/illustration-thank-you.svg" alt="Thank You Illustration" width="100">
-      <summary>You selected <span id="rating-text"></span><!-- Add rating here --> out of 5</summary>
+      <div class="summary">
+        You selected <span id="rating-text"></span><!-- Add rating here --> out of 5
+      </div>
       <h1>Thank you!</h1>
       <p class="msg">
         We appreciate you taking the time to give a rating. If you ever need more support,

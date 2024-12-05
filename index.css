@@ -48,7 +48,7 @@ article {
     transition: all 0.3s ease;
 }
 
-summary {
+.summary {
     background-color: var(--dark-blue);
     border-radius: 1em;
     color: var(--orange);
